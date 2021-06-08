@@ -1,4 +1,7 @@
-
+body {
+  background-color: #ece5da;
+  text-align: center;
+}
   html {
     font-family: 'Yusei Magic', sans-serif;
   }
@@ -40,11 +43,6 @@ button:hover {
 .fortune {
   color: red;
   font-size: 2rem;
-}
-
-body {
-  background-color: #ece5da;
-  text-align: center;
 }
 
 h1 {
