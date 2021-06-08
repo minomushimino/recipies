@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>晩飯決めクジ</title> 
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+  
+
+</head>
+<body>
+  <div class="container">
+ 
+  <h1> <span>今日も美味しいの作ってみようか！</span></h1>
+    <button class ="shadow" onclick="draw()">きょうの晩飯決めるで<br>ボタン押してや</button>
+    <p> 晩飯は、<span id ="fortune" class ="fortune">オムライス</span> に決まりやで❣</p>
+    <p>がんばりや❣リトルミーが応援してるで❣</p>
+   
+  </div>
+
+<script>
+   const results = [
+' レンジでマーボ豆腐by情熱大陸',
+' レンジでマーボ春雨',
+' 親子丼',
+' 生姜焼き',
+' 餃子',
+' 焼きめし',
+' レンジでカルボナーラby情熱大陸',
+' 冷やし中華 or 何でも乗せ麺',
+' マグロアボカド丼',
+' 鮭と豚と卵そぼろ丼',
+' あんかけ天津飯',
+' 焼きそば',
+' プルコギ',
+' ミートソース🍝',
+' スパイスカレー',
+' ドライカレー',
+   ]
+  function draw(){
+    const key = Math.floor(Math.random()*results.length)
+    console.log(key)
+   const fortune = document.getElementById("fortune")
+   fortune.textContent=results[key]
+  }
+</script>
+</body>
+</html>
