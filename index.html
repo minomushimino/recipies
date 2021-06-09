@@ -12,7 +12,7 @@
 </head>
 <body>
   <div class="container">
- 
+  <div id="date"></div>
   <h1> <span>今日も美味しいの作ってみよか！</span></h1>
     <button class ="shadow" onclick="draw()">きょうの晩飯決めるで<br>ボタン押してや</button>
     <p> <span id ="fortune" class ="fortune">オムライス</span> に決まりやで❣</p>
@@ -48,6 +48,17 @@
    const fortune = document.getElementById("fortune")
    fortune.textContent=results[key]
   }
+  
+   const today = new Date(),
+  days = ["日","月","火","水","木","金","土"];
+  let outputText = "今日は";
+  outputText += today.getFullYear() + "年";
+  outputText += (today.getMonth() + 1) + "月";
+  outputText += today.getDate() + "日";
+  outputText += "(" + days[today.getDay()] + ")";
+  outputText += "やで";
+
+document.getElementById("date").textContent = outputText;
 </script>
 </body>
 </html>
