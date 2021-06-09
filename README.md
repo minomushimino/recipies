@@ -1,1 +1,1 @@
-# resipies
+# recipies
